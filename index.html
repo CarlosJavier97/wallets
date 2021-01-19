@@ -1,0 +1,694 @@
+<!DOCTYPE html>
+<html lang="es" >
+<head>
+  <meta charset="UTF-8">
+  <title>Wallet - Transferencia de saldo</title>
+  <link rel='stylesheet' href='font-awesome.min.css'>
+  <link rel='stylesheet' href='bootstrap.min.css'>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="lightbox.min.css">
+</head>
+<body>
+<!-- partial:index.partial.html -->
+<section class="container">
+    <div class="page-header">
+        <h1>Equipo de La Esquina del Exito<br>
+            <small>Wallet para tranferencia de saldo de <a href="https://trustinvesting.com/oficina" target="_blank">Trust Investing</a></small></h1>
+    </div>
+    <div class="button-alert">
+        <p class="alert alert-success ">
+            <button type="button" class="close" data-dismiss="alert">&times;</button>
+            <strong>IMPORTANTE!!!</strong> Necesito que revisen si su wallet es correcta y si se copia correctamente. Próximamente agregaré a más miembros del grupo.
+        </p>
+    </div>
+    <div class="row active-with-click">
+        <div class="col-md-4 col-sm-6 col-xs-12">
+            <article class="material-card Red">
+                <h2>
+                    <span>Alexader Espinoza del Valle</span>
+                    <strong>
+                        <i class="fa fa-fw fa-star"></i>
+                        Lider de Equipo
+                    </strong>
+                </h2>
+                <div class="mc-content">
+                    <div class="img-container">
+                        <a href="thumb-christopher-walken.jpg" data-lightbox="data-lightbox" data-title="Alexader Espinoza del Valle">
+                            <img class="img-responsive" src="./thumb-christopher-walken.jpg">
+                        </a>
+                    </div>
+                    <div class="mc-description">
+                        <p id="p1">a6907cbdc09d553b43fd1c34394ea10cb978a625</p>
+                        <button type="button" class="btn btn-info" onclick="copiarAlPortapapeles('p1')">Copiar Wallet</button>
+                        <br></br>
+                        <input type="text" class="form form-control" placeholder="Pega aquí para probar"/>
+                    </div>
+                </div>
+                <a class="mc-btn-action">
+                    <i class="fa fa-bars"></i>
+                </a>
+                <div class="mc-footer">
+                    <h4>
+                        Redes Sociales
+                    </h4>
+                    <a class="fa fa-fw fa-facebook"></a>
+                    <a class="fa fa-fw fa-twitter"></a>
+                    <a class="fa fa-fw fa-linkedin"></a>
+                    <a class="fa fa-fw fa-google-plus"></a>
+                </div>
+            </article>
+        </div>
+        <div class="col-md-4 col-sm-6 col-xs-12">
+            <article class="material-card Pink">
+                <h2>
+                    <span>Carlos Javier LLovera Delgado</span>
+                    <strong>
+                        <i class="fa fa-fw fa-star"></i>
+                        Lider de Equipo
+                    </strong>
+                </h2>
+                <div class="mc-content">
+                    <div class="img-container">
+                        <a href="./thumb-sean-penn.jpg" data-lightbox="data-lightbox" data-title="Carlos Javier LLovera Delgado">
+                            <img class="img-responsive" src="./thumb-sean-penn.jpg">
+                        </a>
+                    </div>
+                    <div class="mc-description">
+                        <p id="p2">7a01793a07d7869eefdb3acd33a2c012950dc128</p>
+                        <button type="button" class="btn btn-info" onclick="copiarAlPortapapeles('p2')">Copiar Wallet</button>
+                        <br></br>
+                        <input type="text" class="form form-control" placeholder="Pega aquí para probar"/>
+                    </div>
+                </div>
+                <a class="mc-btn-action">
+                    <i class="fa fa-bars"></i>
+                </a>
+                <div class="mc-footer">
+                    <h4>
+                        Redes Sociales
+                    </h4>
+                    <a class="fa fa-fw fa-facebook"></a>
+                    <a class="fa fa-fw fa-twitter"></a>
+                    <a class="fa fa-fw fa-linkedin"></a>
+                    <a class="fa fa-fw fa-google-plus"></a>
+                </div>
+            </article>
+        </div>
+        <div class="col-md-4 col-sm-6 col-xs-12">
+            <article class="material-card Purple">
+                <h2>
+                    <span>Lisbanys Galvez</span>
+                    <strong>
+                        <i class="fa fa-fw fa-star"></i>
+                        Lider de Equipo
+                    </strong>
+                </h2>
+                <div class="mc-content">
+                    <div class="img-container">
+                        <img class="img-responsive" src="./thumb-clint-eastwood.jpg">
+                    </div>
+                    <div class="mc-description">
+                        <p id="p3">Todavía no me has mandado la Wallet</p>
+                        <button type="button" class="btn btn-info" onclick="copiarAlPortapapeles('p3')">Copiar Wallet</button>
+                        <br></br>
+                        <input type="text" class="form form-control" placeholder="Pega aquí para probar"/>
+                    </div>
+                </div>
+                <a class="mc-btn-action">
+                    <i class="fa fa-bars"></i>
+                </a>
+                <div class="mc-footer">
+                    <h4>
+                        Redes Sociales
+                    </h4>
+                    <a class="fa fa-fw fa-facebook"></a>
+                    <a class="fa fa-fw fa-twitter"></a>
+                    <a class="fa fa-fw fa-linkedin"></a>
+                    <a class="fa fa-fw fa-google-plus"></a>
+                </div>
+            </article>
+        </div>
+        <div class="col-md-4 col-sm-6 col-xs-12">
+            <article class="material-card Deep-Purple">
+                <h2>
+                    <span>Osvaldo Cardín Hernández</span>
+                    <strong>
+                        <i class="fa fa-fw fa-star"></i>
+                        Lider de Equipo
+                    </strong>
+                </h2>
+                <div class="mc-content">
+                    <div class="img-container">
+                        <img class="img-responsive" src="./thumb-dustin-hoffman.jpg">
+                    </div>
+                    <div class="mc-description">
+                        <p id="p4">a951cb523b0f8605055533f6d6d527aafdda315d</p>
+                        <button type="button" class="btn btn-info" onclick="copiarAlPortapapeles('p4')">Copiar Wallet</button>
+                        <br></br>
+                        <input type="text" class="form form-control" placeholder="Pega aquí para probar"/>
+                    </div>
+                </div>
+                <a class="mc-btn-action">
+                    <i class="fa fa-bars"></i>
+                </a>
+                <div class="mc-footer">
+                    <h4>
+                        Redes Sociales
+                    </h4>
+                    <a class="fa fa-fw fa-facebook"></a>
+                    <a class="fa fa-fw fa-twitter"></a>
+                    <a class="fa fa-fw fa-linkedin"></a>
+                    <a class="fa fa-fw fa-google-plus"></a>
+                </div>
+            </article>
+        </div>
+        <div class="col-md-4 col-sm-6 col-xs-12">
+            <article class="material-card Indigo">
+                <h2>
+                    <span>Ángel Miguel Lastre</span>
+                    <strong>
+                        <i class="fa fa-fw fa-star"></i>
+                        Lider de Equipo
+                    </strong>
+                </h2>
+                <div class="mc-content">
+                    <div class="img-container">
+                        <img class="img-responsive" src="./thumb-edward-norton.jpg">
+                    </div>
+                    <div class="mc-description">
+                        <p id="p5">604130658d56b7d52f79db6b0dcbe00609d52bd7</p>
+                        <button type="button" class="btn btn-info" onclick="copiarAlPortapapeles('p5')">Copiar Wallet</button>
+                        <br></br>
+                        <input type="text" class="form form-control" placeholder="Pega aquí para probar"/>
+                    </div>
+                </div>
+                <a class="mc-btn-action">
+                    <i class="fa fa-bars"></i>
+                </a>
+                <div class="mc-footer">
+                    <h4>
+                        Redes Sociales
+                    </h4>
+                    <a class="fa fa-fw fa-facebook"></a>
+                    <a class="fa fa-fw fa-twitter"></a>
+                    <a class="fa fa-fw fa-linkedin"></a>
+                    <a class="fa fa-fw fa-google-plus"></a>
+                </div>
+            </article>
+        </div>
+        <div class="col-md-4 col-sm-6 col-xs-12">
+            <article class="material-card Blue">
+                <h2>
+                    <span>Reinaldo (Machi)</span>
+                    <strong>
+                        <i class="fa fa-fw fa-star"></i>
+                        Lider de Equipo
+                    </strong>
+                </h2>
+                <div class="mc-content">
+                    <div class="img-container">
+                        <img class="img-responsive" src="./thumb-michael-caine.jpg">
+                    </div>
+                    <div class="mc-description">
+                        <p id="p6">1685a27506ebf1577e766533bc084b2e8ee03742</p>
+                        <button type="button" class="btn btn-info" onclick="copiarAlPortapapeles('p6')">Copiar Wallet</button>
+                        <br></br>
+                        <input type="text" class="form form-control" placeholder="Pega aquí para probar"/>
+                    </div>
+                </div>
+                <a class="mc-btn-action">
+                    <i class="fa fa-bars"></i>
+                </a>
+                <div class="mc-footer">
+                    <h4>
+                        Redes Sociales
+                    </h4>
+                    <a class="fa fa-fw fa-facebook"></a>
+                    <a class="fa fa-fw fa-twitter"></a>
+                    <a class="fa fa-fw fa-linkedin"></a>
+                    <a class="fa fa-fw fa-google-plus"></a>
+                </div>
+            </article>
+        </div>
+        <div class="col-md-4 col-sm-6 col-xs-12">
+            <article class="material-card Light-Blue">
+                <h2>
+                    <span>Yunisky Grau</span>
+                    <strong>
+                        <i class="fa fa-fw fa-star"></i>
+                        Lider de Equipo
+                    </strong>
+                </h2>
+                <div class="mc-content">
+                    <div class="img-container">
+                        <img class="img-responsive" src="./thumb-harvey-keitel.jpg">
+                    </div>
+                    <div class="mc-description">
+                        <p id="p7">d0b1dc6610ebd16fc8621879ec72d728ae818b2e</p>
+                        <button type="button" class="btn btn-info" onclick="copiarAlPortapapeles('p7')">Copiar Wallet</button>
+                        <br></br>
+                        <input type="text" class="form form-control" placeholder="Pega aquí para probar"/>
+                    </div>
+                </div>
+                <a class="mc-btn-action">
+                    <i class="fa fa-bars"></i>
+                </a>
+                <div class="mc-footer">
+                    <h4>
+                        Redes Sociales
+                    </h4>
+                    <a class="fa fa-fw fa-facebook"></a>
+                    <a class="fa fa-fw fa-twitter"></a>
+                    <a class="fa fa-fw fa-linkedin"></a>
+                    <a class="fa fa-fw fa-google-plus"></a>
+                </div>
+            </article>
+        </div>
+        <div class="col-md-4 col-sm-6 col-xs-12">
+            <article class="material-card Cyan">
+                <h2>
+                    <span>Adonis Muñoz</span>
+                    <strong>
+                        <i class="fa fa-fw fa-star"></i>
+                        Lider de Equipo
+                    </strong>
+                </h2>
+                <div class="mc-content">
+                    <div class="img-container">
+                        <img class="img-responsive" src="./thumb-jack-nicholson.jpg">
+                    </div>
+                    <div class="mc-description">
+                        <p id="p8">94a45c90c76ecc330120c8ab53dbf8462c1e3ed5</p>
+                        <button type="button" class="btn btn-info" onclick="copiarAlPortapapeles('p8')">Copiar Wallet</button>
+                        <br></br>
+                        <input type="text" class="form form-control" placeholder="Pega aquí para probar"/>
+                    </div>
+                </div>
+                <a class="mc-btn-action">
+                    <i class="fa fa-bars"></i>
+                </a>
+                <div class="mc-footer">
+                    <h4>
+                        Redes Sociales
+                    </h4>
+                    <a class="fa fa-fw fa-facebook"></a>
+                    <a class="fa fa-fw fa-twitter"></a>
+                    <a class="fa fa-fw fa-linkedin"></a>
+                    <a class="fa fa-fw fa-google-plus"></a>
+                </div>
+            </article>
+        </div>
+        <div class="col-md-4 col-sm-6 col-xs-12">
+            <article class="material-card Teal">
+                <h2>
+                    <span>Brandesley Valdez López</span>
+                    <strong>
+                        <i class="fa fa-fw fa-star"></i>
+                        Inversor
+                    </strong>
+                </h2>
+                <div class="mc-content">
+                    <div class="img-container">
+                        <img class="img-responsive" src="./thumb-jeff-bridges.jpg">
+                    </div>
+                    <div class="mc-description">
+                        <p id="p9">Todavía no me has mandado la Wallet</p>
+                        <button type="button" class="btn btn-info" onclick="copiarAlPortapapeles('p9')">Copiar Wallet</button>
+                        <br></br>
+                        <input type="text" class="form form-control" placeholder="Pega aquí para probar"/>
+                    </div>
+                </div>
+                <a class="mc-btn-action">
+                    <i class="fa fa-bars"></i>
+                </a>
+                <div class="mc-footer">
+                    <h4>
+                        Redes Sociales
+                    </h4>
+                    <a class="fa fa-fw fa-facebook"></a>
+                    <a class="fa fa-fw fa-twitter"></a>
+                    <a class="fa fa-fw fa-linkedin"></a>
+                    <a class="fa fa-fw fa-google-plus"></a>
+                </div>
+            </article>
+        </div>
+        <div class="col-md-4 col-sm-6 col-xs-12">
+            <article class="material-card Green">
+                <h2>
+                    <span>Julio Medina Reyes</span>
+                    <strong>
+                        <i class="fa fa-fw fa-star"></i>
+                        Inversor
+                    </strong>
+                </h2>
+                <div class="mc-content">
+                    <div class="img-container">
+                        <img class="img-responsive" src="./thumb-joaquin-phoenix.jpg">
+                    </div>
+                    <div class="mc-description">
+                        <p id="p10">6919ba4f002397643cda11b2672a6b3eb0a69624</p>
+                        <button type="button" class="btn btn-info" onclick="copiarAlPortapapeles('p10')">Copiar Wallet</button>
+                        <br></br>
+                        <input type="text" class="form form-control" placeholder="Pega aquí para probar"/>
+                    </div>
+                </div>
+                <a class="mc-btn-action">
+                    <i class="fa fa-bars"></i>
+                </a>
+                <div class="mc-footer">
+                    <h4>
+                        Redes Sociales
+                    </h4>
+                    <a class="fa fa-fw fa-facebook"></a>
+                    <a class="fa fa-fw fa-twitter"></a>
+                    <a class="fa fa-fw fa-linkedin"></a>
+                    <a class="fa fa-fw fa-google-plus"></a>
+                </div>
+            </article>
+        </div>
+        <div class="col-md-4 col-sm-6 col-xs-12">
+            <article class="material-card Light-Green">
+                <h2>
+                    <span>Dayán</span>
+                    <strong>
+                        <i class="fa fa-fw fa-star"></i>
+                        Lider de Equipo
+                    </strong>
+                </h2>
+                <div class="mc-content">
+                    <div class="img-container">
+                        <img class="img-responsive" src="./thumb-tom-hanks.jpg">
+                    </div>
+                    <div class="mc-description">
+                        <p id="p11">Todavía no me has mandado la Wallet</p>
+                        <button type="button" class="btn btn-info" onclick="copiarAlPortapapeles('p11')">Copiar Wallet</button>
+                        <br></br>
+                        <input type="text" class="form form-control" placeholder="Pega aquí para probar"/>
+                    </div>
+                </div>
+                <a class="mc-btn-action">
+                    <i class="fa fa-bars"></i>
+                </a>
+                <div class="mc-footer">
+                    <h4>
+                        Redes Sociales
+                    </h4>
+                    <a class="fa fa-fw fa-facebook"></a>
+                    <a class="fa fa-fw fa-twitter"></a>
+                    <a class="fa fa-fw fa-linkedin"></a>
+                    <a class="fa fa-fw fa-google-plus"></a>
+                </div>
+            </article>
+        </div>
+        <div class="col-md-4 col-sm-6 col-xs-12">
+            <article class="material-card Lime">
+                <h2>
+                    <span>Lázaro</span>
+                    <strong>
+                        <i class="fa fa-fw fa-star"></i>
+                        Inversor
+                    </strong>
+                </h2>
+                <div class="mc-content">
+                    <div class="img-container">
+                        <img class="img-responsive" src="./thumb-philip-seymour-hoffman.jpg">
+                    </div>
+                    <div class="mc-description">
+                        <p id="p12">22079d900cc653c2e3787b19dd31448b84802808</p>
+                        <button type="button" class="btn btn-info" onclick="copiarAlPortapapeles('p12')">Copiar Wallet</button>
+                        <br></br>
+                        <input type="text" class="form form-control" placeholder="Pega aquí para probar"/>
+                    </div>
+                </div>
+                <a class="mc-btn-action">
+                    <i class="fa fa-bars"></i>
+                </a>
+                <div class="mc-footer">
+                    <h4>
+                        Redes Sociales
+                    </h4>
+                    <a class="fa fa-fw fa-facebook"></a>
+                    <a class="fa fa-fw fa-twitter"></a>
+                    <a class="fa fa-fw fa-linkedin"></a>
+                    <a class="fa fa-fw fa-google-plus"></a>
+                </div>
+            </article>
+        </div>
+        <div class="col-md-4 col-sm-6 col-xs-12">
+            <article class="material-card Yellow">
+                <h2>
+                    <span>Jailen Ramírez</span>
+                    <strong>
+                        <i class="fa fa-fw fa-star"></i>
+                        Inversor
+                    </strong>
+                </h2>
+                <div class="mc-content">
+                    <div class="img-container">
+                        <img class="img-responsive" src="./thumb-paul-newman.jpg">
+                    </div>
+                    <div class="mc-description">
+                        <p id="p13">Todavía no me has mandado la Wallet</p>
+                        <button type="button" class="btn btn-info" onclick="copiarAlPortapapeles('p13')">Copiar Wallet</button>
+                        <br></br>
+                        <input type="text" class="form form-control" placeholder="Pega aquí para probar"/>
+                    </div>
+                </div>
+                <a class="mc-btn-action">
+                    <i class="fa fa-bars"></i>
+                </a>
+                <div class="mc-footer">
+                    <h4>
+                        Redes Sociales
+                    </h4>
+                    <a class="fa fa-fw fa-facebook"></a>
+                    <a class="fa fa-fw fa-twitter"></a>
+                    <a class="fa fa-fw fa-linkedin"></a>
+                    <a class="fa fa-fw fa-google-plus"></a>
+                </div>
+            </article>
+        </div>
+        <div class="col-md-4 col-sm-6 col-xs-12">
+            <article class="material-card Amber">
+                <h2>
+                    <span>Mario Basallo</span>
+                    <strong>
+                        <i class="fa fa-fw fa-star"></i>
+                        Inversor
+                    </strong>
+                </h2>
+                <div class="mc-content">
+                    <div class="img-container">
+                        <img class="img-responsive" src="./thumb-marlon-brando.jpg">
+                    </div>
+                    <div class="mc-description">
+                        <p id="p14">Todavía no me has mandado la Wallet</p>
+                        <button type="button" class="btn btn-info" onclick="copiarAlPortapapeles('p14')">Copiar Wallet</button>
+                        <br></br>
+                        <input type="text" class="form form-control" placeholder="Pega aquí para probar"/>
+                    </div>
+                </div>
+                <a class="mc-btn-action">
+                    <i class="fa fa-bars"></i>
+                </a>
+                <div class="mc-footer">
+                    <h4>
+                        Redes Sociales
+                    </h4>
+                    <a class="fa fa-fw fa-facebook"></a>
+                    <a class="fa fa-fw fa-twitter"></a>
+                    <a class="fa fa-fw fa-linkedin"></a>
+                    <a class="fa fa-fw fa-google-plus"></a>
+                </div>
+            </article>
+        </div>
+        <div class="col-md-4 col-sm-6 col-xs-12">
+            <article class="material-card Orange">
+                <h2>
+                    <span>Cézar Luís</span>
+                    <strong>
+                        <i class="fa fa-fw fa-star"></i>
+                        Inversor
+                    </strong>
+                </h2>
+                <div class="mc-content">
+                    <div class="img-container">
+                        <img class="img-responsive" src="./thumb-kevin-spacey.jpg">
+                    </div>
+                    <div class="mc-description">
+                        <p id="p15">Todavía no me has mandado la Wallet</p>
+                        <button type="button" class="btn btn-info" onclick="copiarAlPortapapeles('p15')">Copiar Wallet</button>
+                        <br></br>
+                        <input type="text" class="form form-control" placeholder="Pega aquí para probar"/>
+                    </div>
+                </div>
+                <a class="mc-btn-action">
+                    <i class="fa fa-bars"></i>
+                </a>
+                <div class="mc-footer">
+                    <h4>
+                        Redes Sociales
+                    </h4>
+                    <a class="fa fa-fw fa-facebook"></a>
+                    <a class="fa fa-fw fa-twitter"></a>
+                    <a class="fa fa-fw fa-linkedin"></a>
+                    <a class="fa fa-fw fa-google-plus"></a>
+                </div>
+            </article>
+        </div>
+        <div class="col-md-4 col-sm-6 col-xs-12">
+            <article class="material-card Deep-Orange">
+                <h2>
+                    <span>Roberto Llovera Cazañas</span>
+                    <strong>
+                        <i class="fa fa-fw fa-star"></i>
+                        Lider de Equipo
+                    </strong>
+                </h2>
+                <div class="mc-content">
+                    <div class="img-container">
+                        <img class="img-responsive" src="./thumb-robert-de-niro.jpg">
+                    </div>
+                    <div class="mc-description">
+                        <p id="p16">8f5800794b31ee5630b3940014e76ecda23fb10c</p>
+                        <button type="button" class="btn btn-info" onclick="copiarAlPortapapeles('p16')">Copiar Wallet</button>
+                        <br></br>
+                        <input type="text" class="form form-control" placeholder="Pega aquí para probar"/>
+                    </div>
+                </div>
+                <a class="mc-btn-action">
+                    <i class="fa fa-bars"></i>
+                </a>
+                <div class="mc-footer">
+                    <h4>
+                        Redes Sociales
+                    </h4>
+                    <a class="fa fa-fw fa-facebook"></a>
+                    <a class="fa fa-fw fa-twitter"></a>
+                    <a class="fa fa-fw fa-linkedin"></a>
+                    <a class="fa fa-fw fa-google-plus"></a>
+                </div>
+            </article>
+        </div>
+        <div class="col-md-4 col-sm-6 col-xs-12">
+            <article class="material-card Brown">
+                <h2>
+                    <span>Eliezer Ribalta</span>
+                    <strong>
+                        <i class="fa fa-fw fa-star"></i>
+                        Inversor
+                    </strong>
+                </h2>
+                <div class="mc-content">
+                    <div class="img-container">
+                        <img class="img-responsive" src="./thumb-steve-mcqueen.jpg">
+                    </div>
+                    <div class="mc-description">
+                        <p id="p17">bb8bdd239804235122b1f73b3b46602b583626d8</p>
+                        <button type="button" class="btn btn-info" onclick="copiarAlPortapapeles('p17')">Copiar Wallet</button>
+                        <br></br>
+                        <input type="text" class="form form-control" placeholder="Pega aquí para probar"/>
+                    </div>
+                </div>
+                <a class="mc-btn-action">
+                    <i class="fa fa-bars"></i>
+                </a>
+                <div class="mc-footer">
+                    <h4>
+                        Redes Sociales
+                    </h4>
+                    <a class="fa fa-fw fa-facebook"></a>
+                    <a class="fa fa-fw fa-twitter"></a>
+                    <a class="fa fa-fw fa-linkedin"></a>
+                    <a class="fa fa-fw fa-google-plus"></a>
+                </div>
+            </article>
+        </div>
+        <div class="col-md-4 col-sm-6 col-xs-12">
+            <article class="material-card Grey">
+                <h2>
+                    <span>Igniel de la Fuente</span>
+                    <strong>
+                        <i class="fa fa-fw fa-star"></i>
+                        Lider de Equipo
+                    </strong>
+                </h2>
+                <div class="mc-content">
+                    <div class="img-container">
+                        <img class="img-responsive" src="./thumb-rugter-hauer.jpg">
+                    </div>
+                    <div class="mc-description">
+                        <p id="p18">Todavía no me has mandado la Wallet</p>
+                        <button type="button" class="btn btn-info" onclick="copiarAlPortapapeles('p18')">Copiar Wallet</button>
+                        <br></br>
+                        <input type="text" class="form form-control" placeholder="Pega aquí para probar"/>
+                    </div>
+                </div>
+                <a class="mc-btn-action">
+                    <i class="fa fa-bars"></i>
+                </a>
+                <div class="mc-footer">
+                    <h4>
+                        Redes Sociales
+                    </h4>
+                    <a class="fa fa-fw fa-facebook"></a>
+                    <a class="fa fa-fw fa-twitter"></a>
+                    <a class="fa fa-fw fa-linkedin"></a>
+                    <a class="fa fa-fw fa-google-plus"></a>
+                </div>
+            </article>
+        </div>
+        <div class="col-md-4 col-sm-6 col-xs-12">
+            <article class="material-card Blue-Grey">
+                <h2>
+                    <span>Frank Luis Castillo</span>
+                    <strong>
+                        <i class="fa fa-fw fa-star"></i>
+                        Inversor
+                    </strong>
+                </h2>
+                <div class="mc-content">
+                    <div class="img-container rounded-soft">
+                        <img class="img-responsive" src="./thumb-morgan-freeman.jpg">
+                    </div>
+                    <div class="mc-description">
+                        <p id="p19">5ef2e9268688872d5eb30c24f2684aa99c550b5d</p>
+                        <button type="button" class="btn btn-info" onclick="copiarAlPortapapeles('p19')">Copiar Wallet</button>
+                        <br></br>
+                        <input type="text" class="form form-control" placeholder="Pega aquí para probar"/>
+                    </div>
+                </div>
+                <a class="mc-btn-action">
+                    <i class="fa fa-bars"></i>
+                </a>
+                <div class="mc-footer">
+                    <h4>
+                        Redes Sociales
+                    </h4>
+                    <a class="fa fa-fw fa-facebook"></a>
+                    <a class="fa fa-fw fa-twitter"></a>
+                    <a class="fa fa-fw fa-linkedin"></a>
+                    <a class="fa fa-fw fa-google-plus"></a>
+                </div>
+            </article>
+        </div>
+    </div>
+</section>
+
+<!-- partial -->
+  <script src='jquery.min.js'></script>
+  <script  src="script.js"></script>
+  <script src="lightbox.min.js"></script>
+  <script src="typed.min.js"></script>
+  <script>
+      function copiarAlPortapapeles(id_elemento) {
+  var aux = document.createElement("input");
+  aux.setAttribute("value", document.getElementById(id_elemento).innerHTML);
+  document.body.appendChild(aux);
+  aux.select();
+  document.execCommand("copy");
+  document.body.removeChild(aux);
+}
+  </script> 
+</body>
+</html>
